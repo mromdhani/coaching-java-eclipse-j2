@@ -1,0 +1,69 @@
+Simple expressions and variables
+--------------------------------
+jshell> 304 - 4
+  $1 ==> 300
+  
+jshell> double money = 35.8
+money ==> 35.8
+| created variable money : double
+ 
+jshell> int square (int s) {
+   ...> return s*s;
+   ...> }
+|  created method square(int)
+ 
+jshell> square(5)
+$3 ==> 25
+|  created scratch variable $3 : int
+ 
+Modification
+------------
+
+jshell> String square(int s) {
+...> return "Square => " + s*s;
+...> }
+| replaced method square(int)
+| update overwrote method square(int)
+ 
+jshell> square(25)
+$8 ==> "Square => 625"
+| created scratch variable $4 : String
+
+Exceptions
+----------
+
+jshell> int divide(int x, int y) {
+  ...> return x / y;
+  ...> }
+| created method divide(int,int)
+ 
+jshell> divide(3,0)
+|   java.lang.ArithmeticException thrown: / by zero
+|     at divide (#1:2)
+|     at (#2:1)
+ 
+jshell> /list
+ 
+  1 : int divide(int x, int y) {
+      return x / y;
+      }
+  2 : divide(3,0)
+  
+ Tab completion
+ --------------
+ jshell> divide(<tab>
+$2 divide(
+ 
+Signatures:
+int divide(int x, int y)
+ 
+<press tab again to see documentation>
+ 
+jshell> divide(
+int divide(int x, int y)
+<no documentation found>
+ 
+<press tab again to see all possible completions; total possible completions: 541>
+
+
+ 

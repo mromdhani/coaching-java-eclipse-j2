@@ -1,0 +1,7 @@
+- To start JShell
+  enter the jshell command on the command line. 
+- To exit JShell
+  To exit JShell, enter /exit
+  
+  
+/exit

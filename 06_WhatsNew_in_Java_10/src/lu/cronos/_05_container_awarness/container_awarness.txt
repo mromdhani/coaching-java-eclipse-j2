@@ -1,0 +1,6 @@
+- Limit the jvm to 1000 millicores within docker.
+  docker container run -it --cpu-shares 1000 openjdk:10-jdk
+
+- Check that the limit is having effect
+   jshell> Runtime.getRuntime().availableProcessors()
+   $1 ==> 1

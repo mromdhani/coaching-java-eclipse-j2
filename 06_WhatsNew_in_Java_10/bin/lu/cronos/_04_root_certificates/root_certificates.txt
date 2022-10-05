@@ -1,0 +1,4 @@
+-	List the certificates which are shipped with your JDK. Use the following command: 
+    keytool -cacerts -list -v | grep Issuer
+    Hint: default password of the keystore is : changeit
+-	Compare the existing certificate names  with those listed in JEP 319 (http://openjdk.java.net/jeps/319)

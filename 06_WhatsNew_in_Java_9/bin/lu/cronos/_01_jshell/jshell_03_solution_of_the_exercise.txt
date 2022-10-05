@@ -1,0 +1,13 @@
+ import java.time.LocalDate; 
+  import java.time.temporal.ChoronoUnit;
+  
+ # Method 1
+ LocalDate d1 = LocalDate.of(2021, Month.OCTOBER, 25);
+ LocalDate d2 = LocalDate.of(2021, Month.DECEMBER, 31);
+ ChronoUnit.DAYS.between(d1,d2);
+ 
+ # Method 2
+ LocalDate d1 = LocalDate.of(2021, Month.OCTOBER, 25);
+ LocalDate d2 = LocalDate.of(2021, Month.DECEMBER, 31);
+ d1.until(d2,  ChronoUnit.DAYS )
+ 
